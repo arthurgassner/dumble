@@ -37,7 +37,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         This is an open source joke on the word-guessing game we all know and
         love -{' '}
         <a
-          href="https://github.com/arthurgassner/react-wordle"
+          href="https://github.com/arthurgassner/dumble"
           className="underline font-bold"
         >
           check out the code here
