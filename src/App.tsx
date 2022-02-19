@@ -231,7 +231,7 @@ function App() {
             Math.floor(Math.random() * WRONG_WORD_MESSAGES.length)
           ]
         showErrorAlert(wrongWordMessage, {
-          delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1000,
+          durationMs: ALERT_TIME_MS * 1.5,
         })
       }
 
