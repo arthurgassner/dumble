@@ -12,6 +12,7 @@ import { SettingsModal } from './components/modals/SettingsModal'
 import {
   GAME_TITLE,
   WIN_MESSAGES,
+  WRONG_WORD_MESSAGES,
   GAME_COPIED_MESSAGE,
   NOT_ENOUGH_LETTERS_MESSAGE,
   WORD_NOT_FOUND_MESSAGE,
@@ -224,6 +225,12 @@ function App() {
       if (winningWord) {
         setStats(addStatsForCompletedGame(stats, guesses.length))
         return setIsGameWon(true)
+      } else {
+        const wrongWordMessage =
+          WRONG_WORD_MESSAGES[
+            Math.floor(Math.random() * WRONG_WORD_MESSAGES.length)
+          ]
+        showErrorAlert(wrongWordMessage)
       }
 
       if (guesses.length === MAX_CHALLENGES - 1) {

@@ -1,6 +1,7 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
 export const WIN_MESSAGES = ['Who\'s bad at scrabble now?!', 'Go and get it you magnificent beast!', 'Outstanding move!']
+export const WRONG_WORD_MESSAGES = ['Dude really?', "Damn so close yet so far", "\"Do... or do not. There is no try.\" -- Not you, 2022"]
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters'
 export const WORD_NOT_FOUND_MESSAGE = 'Letter not found'
