@@ -230,7 +230,9 @@ function App() {
           WRONG_WORD_MESSAGES[
             Math.floor(Math.random() * WRONG_WORD_MESSAGES.length)
           ]
-        showErrorAlert(wrongWordMessage)
+        showErrorAlert(wrongWordMessage, {
+          delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1000,
+        })
       }
 
       if (guesses.length === MAX_CHALLENGES - 1) {
